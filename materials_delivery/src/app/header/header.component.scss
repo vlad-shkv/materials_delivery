@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Geologica:wght@100..900&display=swap');
 
-.logo {
-    &-img {
+.header {
+    background-color: #FFF9C7;
+    padding: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__img {
         background-image: url(/logo.svg);
         width: 110px;
         height: 110px;
@@ -11,14 +24,14 @@
         background-repeat: no-repeat;
 
     }
+}
 
-    &-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    &-title {
+    &__title {
         display: flex;
         flex-direction: column;
         font-family: "Dela Gothic One", sans-serif;
@@ -28,30 +41,44 @@
         margin: 0;
         color: #016670;
     }
+
+    &__subtitle {
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 25px;
+        margin: 0;
+        color: #016670;
+    }
 }
 
-.subtitle {
-    font-family: "Geologica", sans-serif;
-    font-optical-sizing: auto;
-    font-variation-settings:
-        "slnt" 0,
-        "CRSV" 0,
-        "SHRP" 0;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 25px;
-    margin: 0;
-    color: #016670;
-}
-
-.title-cont {
+.call-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    gap: 10px;
 
-.header {
-    background-color: #FFF9C7;
-    padding: 10px;
-    padding-bottom: 15px;
+    &__img {
+        background-image: url(/icon-call.png);
+        height: 30px;
+        width: 30px;
+    }
+
+    &__link {
+        font-size: 25px;
+        color: #016670;
+        text-decoration: none;
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 25px;
+    }
 }

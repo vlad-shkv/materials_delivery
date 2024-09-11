@@ -1,7 +1,9 @@
 .button-call {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     background-color: fuchsia;
-    right: 10px;
-    bottom: 10px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
 }

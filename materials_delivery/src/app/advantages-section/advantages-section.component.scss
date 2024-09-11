@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Geologica:wght@100..900&display=swap');
+
+.advantages {
+    &-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-style: normal;
+        align-items: center;
+        gap: 30px;
+
+        &__title {
+            margin: 0;
+            font-size: 25px;
+        }
+    }
+    
+    &-list {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        &__icon {
+            background-image: url(/icon-arrow.png);
+            width: 30px;
+            height: 30px;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        &__item {
+            display: flex;
+            gap: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
