@@ -2,7 +2,10 @@
     <h3 class="advantages-section__title">Наші переваги</h3>
     <div class="advantages-list">
         <div *ngFor="let item of advantagesArray" class="advantages-list__item">
-            <div class="advantages-list__icon"></div>{{item}}
+            <div class="advantages-list__border">
+                <img [src]="item.img" alt="icon" class="advantages-list__icon">
+            </div>
+            <span>{{item.text}}</span>
         </div>
     </div>
 </div>

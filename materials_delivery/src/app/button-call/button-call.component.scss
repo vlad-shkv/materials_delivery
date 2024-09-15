@@ -1,9 +1,15 @@
 .button-call {
-    width: 45px;
-    height: 45px;
-    background-color: fuchsia;
+    width: 55px;
+    height: 55px;
     position: fixed;
     right: 15px;
     bottom: 15px;
     cursor: pointer;
+    background-image: url(/icons/icon-viber.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    z-index: 1000;
+    background-color: transparent;
 }

@@ -4,6 +4,7 @@
     &-section {
         display: flex;
         flex-direction: column;
+        max-width: 1440px;
         width: 100%;
         font-family: "Geologica", sans-serif;
         font-optical-sizing: auto;
@@ -13,31 +14,47 @@
             "SHRP" 0;
         font-style: normal;
         align-items: center;
-        gap: 30px;
+        justify-content: center;
+        gap: 40px;
+        margin: 0 auto;
+        margin-bottom: 80px;
 
         &__title {
             margin: 0;
-            font-size: 25px;
+            font-size: 35px;
+            color: #016670;
         }
     }
     
     &-list {
         display: flex;
-        gap: 20px;
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
 
         &__icon {
-            background-image: url(/icon-arrow.png);
-            width: 30px;
-            height: 30px;
-            background-size: 100%;
-            background-position: center;
+            width: 40px;
+            height: 40px;
         }
 
         &__item {
             display: flex;
             gap: 15px;
             font-size: 20px;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            width: 40%;
+        }
+
+        &__border {
+            border: 2px solid #016670;
+            padding: 15px;
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
         }
     }
 }
