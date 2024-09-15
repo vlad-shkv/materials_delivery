@@ -12,6 +12,22 @@
     box-shadow: #2f2f2f85 0px 11px 20px 7px;
     position: relative;
     z-index: 5;
+
+    .naw-container {
+        display: flex;
+        gap: 20px;
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 19px;
+        margin: 0;
+        color: #016670;
+    }
 }
 
 .logo-container {
@@ -64,11 +80,15 @@
 .call-container {
     display: flex;
     gap: 10px;
+    align-items: center;
 
     &__img {
         background-image: url(/icon-call.png);
         height: 30px;
         width: 30px;
+        background-size: 100%;
+        background-position: bottom;
+        transform: translateY(1px);
     }
 
     &__link {
@@ -84,5 +104,49 @@
         font-weight: 300;
         font-style: normal;
         font-size: 25px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        padding: 5px 10px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    
+        .naw-container {
+            gap: 15px;
+            font-size: 16px;
+        }
+    }
+    
+    .logo-container {
+        gap: 7px;
+    
+        &__img {
+            background-image: url(/logo.svg);
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+    .title-container {
+        &__title {
+            font-size: 23px;
+        }
+    
+        &__subtitle {
+            font-size: 19px;
+        }
+    }
+    
+    .call-container {
+        &__img {
+            height: 20px;
+            width: 20px;
+        }
+    
+        &__link {
+            font-size: 19px;
+        }
     }
 }

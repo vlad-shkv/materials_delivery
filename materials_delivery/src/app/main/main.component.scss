@@ -16,6 +16,52 @@
     position: relative;
     z-index: 2;
 
+    .main__title-container {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-image: url(/phone1.png);
+        background-position: center;
+        background-size: 35%;
+        background-repeat: no-repeat;
+    }
+
+    .main__title {
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 45px;
+        color: #FFF9C7;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-shadow: #000000ac 0px 1px 13px;
+    }
+
+    .main__subtitle {
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 35px;
+        color: #FBE180;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-shadow: #000000bc 0px 1px 13px;
+    }    
+
     .main__cars-container {
         display: flex;
         justify-content: space-between;
@@ -31,21 +77,27 @@
             z-index: 5;
         }
 
-        .main__car-first::after {
+        .main__car-first::before {
             content: "ЗіЛ від 1 до 6 тон";
             color: #016670;
             position: absolute;
-            top: 100px;
-            right: -180px;
+            top: 385px;
+            right: -270px;
             padding: 25px;
             background-color: #FFF9C7;
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: 300;
-            font-size: 30px;
-            font-family: "Dela Gothic One", sans-serif;
+            font-size: 23px;
+            font-family: "Geologica", sans-serif;
+            font-weight: 600;
             box-shadow: #2f2f2f85 0px 11px 20px 7px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 60px;
+            padding-left: 40px;
+            z-index: 15;
         }
 
         .main__car-second {
@@ -63,17 +115,115 @@
             content: "КАМАЗ від 7 до 10 тон";
             color: #016670;
             position: absolute;
-            bottom: 230px;
-            left: -390px;
+            bottom: 290px;
+            left: -328px;
             padding: 25px;
             background-color: #FFF9C7;
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: 300;
-            font-size: 30px;
-            font-family: "Dela Gothic One", sans-serif;
+            font-size: 23px;
+            font-family: "Geologica", sans-serif;
+            font-weight: 600;
             box-shadow: #2f2f2f85 0px 11px 20px 7px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 60px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main__back {
+        height: calc(100% - 90px);
+        top: 90px;
+    }
+    
+    .main {
+        .main__title-container {
+            margin-top: 0px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-size: 40%;
+        }
+    
+        .main__title {
+            font-size: 37px;
+        }
+    
+        .main__subtitle {
+            font-size: 28px;
+        }    
+    
+        .main__cars-container {
+            .main__car-first {
+                width: 40%;
+                height: 650px;
+                background-image: url(/image432.png);
+                background-size: 100%;
+                background-position: center;
+                position: relative;
+                background-repeat: no-repeat;
+                z-index: 5;
+            }
+    
+            .main__car-first::before {
+                content: "ЗіЛ від 1 до 6 тон";
+                color: #016670;
+                position: absolute;
+                top: 385px;
+                right: -270px;
+                padding: 25px;
+                background-color: #FFF9C7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 300;
+                font-size: 23px;
+                font-family: "Geologica", sans-serif;
+                font-weight: 600;
+                box-shadow: #2f2f2f85 0px 11px 20px 7px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 60px;
+                padding-left: 40px;
+                z-index: 15;
+            }
+    
+            .main__car-second {
+                width: 35%;
+                height: 650px;
+                background-image: url(/orangeCar.png);
+                background-size: 100%;
+                background-position: center;
+                position: relative;
+                background-repeat: no-repeat;
+                z-index: 5;
+            }
+    
+            .main__car-second::before {
+                content: "КАМАЗ від 7 до 10 тон";
+                color: #016670;
+                position: absolute;
+                bottom: 290px;
+                left: -328px;
+                padding: 25px;
+                background-color: #FFF9C7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 300;
+                font-size: 23px;
+                font-family: "Geologica", sans-serif;
+                font-weight: 600;
+                box-shadow: #2f2f2f85 0px 11px 20px 7px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 60px;
+                padding-right: 40px;
+            }
         }
     }
 }
