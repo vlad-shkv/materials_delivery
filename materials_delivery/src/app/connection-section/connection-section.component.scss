@@ -1,0 +1,35 @@
+.connection-section {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 40px;
+    margin-bottom: 40px;
+
+    &__img {
+        width: 100%;
+        border-radius: 40px;
+        border: 4px solid #016670;
+    }
+
+    &__info-container {
+        display: flex;
+        gap: 100px;
+    }
+}
+
+.info-container {
+    &__title {
+        margin: 0;
+        font-size: 35px;
+        color: #016670;
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-style: normal;
+    }
+}

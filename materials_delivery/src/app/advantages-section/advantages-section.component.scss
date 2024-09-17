@@ -31,8 +31,7 @@
         flex-wrap: wrap;
         gap: 30px;
         align-items: center;
-        width: 100%;
-        justify-content: space-between;
+        justify-content: center;
 
         &__icon {
             width: 40px;
@@ -46,11 +45,11 @@
             align-items: center;
             text-align: center;
             box-sizing: border-box;
+            border: 2px solid #016670;
             width: 40%;
         }
 
         &__border {
-            border: 2px solid #016670;
             padding: 15px;
             border-radius: 40px;
             width: 40px;

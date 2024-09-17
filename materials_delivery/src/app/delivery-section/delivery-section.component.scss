@@ -9,15 +9,43 @@
     gap: 40px;
     margin-bottom: 80px;
 
-    &__container {
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__imgs-container {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-around;
     }
 
-    &__img {
+    &__button {
         width: 40%;
+        height: 50px;
+        font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-style: normal;
+        font-size: 20px;
+        background-color: #016670;
+        color: white;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    &__img {
+        width: 600px;
+        border-radius: 40px;
+        border: 4px solid #016670;
     }
 
     &__description {
@@ -42,6 +70,12 @@
             "CRSV" 0,
             "SHRP" 0;
         font-style: normal;
-        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 100px;
     }
 }
