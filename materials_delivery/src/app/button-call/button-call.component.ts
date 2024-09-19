@@ -8,7 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './button-call.component.scss'
 })
 export class ButtonCallComponent {
-  handleClickButton() {
-    console.log(1234);
-  }
 }

@@ -1,3 +1,30 @@
 .footer {
-    background-color: #FFF9C7;
+    background-color: #016670;
+    height: 50px;
+    color: #FFF9C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Geologica", sans-serif;
+        font-optical-sizing: auto;
+        font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0,
+            "SHRP" 0;
+        font-style: normal;
+        box-shadow: #00000061 0px 0px 20px 1px;
+}
+
+@media (max-width: 1280px) {
+    .footer {
+    height: 40px;
+    font-size: 15px;
+}
+}
+
+@media (max-width: 768px) {
+    .footer {
+    height: 30px;
+    font-size: 15px;
+}
 }

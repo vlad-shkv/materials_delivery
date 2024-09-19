@@ -12,4 +12,46 @@
     border: 0;
     z-index: 1000;
     background-color: transparent;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.button-call-second {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    right: 15px;
+    bottom: 80px;
+    cursor: pointer;
+    background-image: url(/call-receive-svgrepo-com.svg);
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    z-index: 1000;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: 0.2s;
+    background-color: rgb(0, 56, 115);
+    border-radius: 100px;
+}
+
+.button-call:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1280px) {
+    .button-call {
+        width: 45px;
+        height: 45px;
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    .button-call-second {
+        width: 45px;
+        height: 45px;
+        right: 10px;
+        bottom: 70px;
+    }
 }

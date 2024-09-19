@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Geologica:wght@100..900&display=swap');
 
 .advantages {
-    &-section {
+    &-section__container {
         display: flex;
         flex-direction: column;
-        max-width: 1440px;
         width: 100%;
         font-family: "Geologica", sans-serif;
         font-optical-sizing: auto;
@@ -17,7 +16,14 @@
         justify-content: center;
         gap: 40px;
         margin: 0 auto;
-        margin-bottom: 80px;
+        max-width: 1740px;
+    }
+
+    &-section {
+        background-color: #FFF9C7;
+        padding-top: 45px;
+        padding-bottom: 65px;
+        box-shadow: #00000061 0px 0px 20px 1px;
 
         &__title {
             margin: 0;
@@ -43,6 +49,7 @@
             gap: 15px;
             font-size: 20px;
             align-items: center;
+            justify-content: center;
             text-align: center;
             box-sizing: border-box;
             border: 2px solid #016670;
@@ -54,7 +61,84 @@
             border-radius: 40px;
             width: 40px;
             height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
 
+@media (max-width: 1280px) {
+    .advantages {
+        &-section__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+    
+        &-section {
+            background-color: #FFF9C7;
+            padding-top: 45px;
+            padding-bottom: 65px;
+            box-shadow: #00000061 0px 0px 20px 1px;
+    
+            &__title {
+                font-size: 24px;
+            }
+        }
+        
+        &-list {
+            gap: 20px;
+    
+            &__icon {
+                width: 30px;
+                height: 30px;
+            }
+    
+            &__item {
+                gap: 5px;
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages {
+        &-section__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+    
+        &-section {
+            background-color: #FFF9C7;
+            padding-top: 25px;
+            padding-bottom: 45px;
+            box-shadow: #00000061 0px 0px 20px 1px;
+    
+            &__title {
+                font-size: 20px;
+            }
+        }
+        
+        &-list {
+            gap: 10px;
+    
+            &__icon {
+                width: 30px;
+                height: 30px;
+            }
+    
+            &__item {
+                gap: 5px;
+                font-size: 14px;
+                padding: 3px;
+                width: 80%;
+            }
+        }
+    }
+}
